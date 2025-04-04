@@ -1,0 +1,56 @@
+/* Apply to entire page */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffe6f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Container to center everything */
+.container {
+    text-align: center;
+    background-color: #fff0f5;
+    border: 3px solid #ff80ab;
+    border-radius: 25px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(255, 0, 128, 0.2);
+}
+
+/* Header text styling */
+.header_text {
+    font-size: 2.5rem;
+    color: #ff1a75;
+    margin-bottom: 30px;
+    animation: pop 1s ease;
+}
+
+/* GIF container */
+.gif_container img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+}
+
+/* Optional: Pop animation on text */
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Responsive for smaller devices */
+@media (max-width: 480px) {
+    .header_text {
+        font-size: 1.6rem;
+    }
+}
